@@ -1,1 +1,3 @@
-window.add = num => num + 1;
+window.add = function (num) {
+    return num + 1;
+}
