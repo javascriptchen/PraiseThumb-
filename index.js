@@ -1,0 +1,1 @@
+window.add = num => num + 1;
