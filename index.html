@@ -21,20 +21,19 @@
     <script src="https://cdn.bootcss.com/systemjs/0.20.19/system.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript">
-        // SystemJS.config({
-        //     baseURL: '/praisethumb/scripts'
-        // });
-        // SystemJS.import('index-es.js').then(function (m) {
-        //     $.extend({
-        //         thumb: m.default.Thumb
-        //     });
-        //     callBack();
-        // });
+        $(function () {
+            SystemJS.import('/PraiseThumb-first/script/index-es.js').then(res => {
+                $.extend({
+                    thumb: res.default.Thumb
+                })
+                callback()
+            });
 
-        // function callBack() {
-        //     var f = new $.thumb(0, $('#thumb'));
-        //     f.clickAction();
-        // }
+            function callback() {
+                new $.thumb(0, $('#thumb')).clickAction()
+            }
+            
+        })
     </script>
 </body>
 
