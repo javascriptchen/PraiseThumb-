@@ -1,1 +1,1 @@
-# PraiseThumb-first
+# 本次项目是热身，学习单元测试，e2e测试，es6语法学习
